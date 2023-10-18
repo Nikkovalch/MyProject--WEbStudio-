@@ -1,0 +1,26 @@
+/* ----------Ширина-контенту---------------------- */
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+/* Скритий елемент сторінки */
+.features .page__title,
+.category__title,
+.checkbox__text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+// ---Обгортка---------------
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: 'Roboto', sans-serif;
+}

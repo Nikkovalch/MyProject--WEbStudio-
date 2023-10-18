@@ -1,0 +1,16 @@
+.header {
+  background-color: #FFF;
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+// ----menu-----------------------
+
+.header__menu {
+  margin-left: 93px;
+}
+
+/* -------svg------------------- */
+

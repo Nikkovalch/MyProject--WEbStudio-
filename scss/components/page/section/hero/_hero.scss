@@ -1,0 +1,38 @@
+.hero__container {
+  text-align: center;
+  padding: 200px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero {
+  background-color: #2f303a;
+  display: block;
+  background-image: url(../image/hero/Img\ Overlay.png),
+    url(../image/hero/Img.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  &__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44 * 100%);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $title-light;
+    margin: 0 0 30px 0;
+    max-width: 696px;
+  }
+  &__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44 * 100%);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $title-light;
+    margin: 0 0 30px 0;
+    max-width: 696px;
+  }
+}
+
+

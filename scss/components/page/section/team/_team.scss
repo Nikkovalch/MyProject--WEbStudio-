@@ -1,0 +1,79 @@
+.team {
+  background-color: $background-team-light;
+  &__container {
+    padding: 94px 0;
+  }
+  &__list {
+    display: flex;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+  }
+  &__item {
+    padding: 0 15px;
+  }
+  &__column {
+    background-color: var(--background-light);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    padding: 0 0 30px;
+    text-align: center;
+  }
+  &__image {
+    display: block;
+    height: 260px;
+    background-color: var(--most-of-color-text);
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19 / 16 * 100%);
+    color: var(--title-dark);
+    margin: 30px 0 10px 0;
+  }
+  &__profesion {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(19 / 16 * 100%);
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+  &__list-social {
+    gap: 10px;
+  }
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__item {
+    width: 44px;
+    height: 44px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-radius: 50%;
+    transition: background-color $transition-duration $transition-timing-function;
+    &:hover,
+    &:focus {
+      background-color: #2196f3;
+    }
+    &:hover .social-list__icon,
+    &:focus .social-list__icon {
+      fill: #ffffff;
+    }
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: #afb1b8;
+    transition: fill $transition-duration $transition-timing-function;
+  }
+}

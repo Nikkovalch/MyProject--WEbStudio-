@@ -1,0 +1,41 @@
+.footer__input {
+	margin-left: 93px;
+	flex: 1 1 auto;
+}
+
+.input-footer__form {
+	display: flex;
+	position: relative;
+	gap: 12px;
+}
+.input-footer__email {
+	position: relative;
+	padding: 10px 16px;
+	flex: 1 1 auto;
+	border: none;
+	outline: none;
+	background-color: #2F303A;
+	outline: 1px solid rgba(255, 255, 255, 0.30);;
+	border-radius: 4px;
+	color: white;
+}
+.input-footer__label {
+	position: absolute;
+	top: 50%;
+	left: 16px;
+	color: rgba(255, 255, 255, 0.60);
+	line-height: calc(20 / 16 * 100%);
+	letter-spacing: 0.48px;
+	transform: translateY(-50%);
+	transition: top $transition-timing-function 1s;
+	opacity: 0;
+}
+.input-footer__email:placeholder-shown + .input-footer__label {
+	opacity: 1;
+}
+// іконка кнопки----------------------------------
+.footer__btn-icon {
+	width: 24px;
+	height: 24px;
+	margin-left: 10px;
+}
