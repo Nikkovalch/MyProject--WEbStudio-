@@ -1,0 +1,32 @@
+.social__list {
+	justify-content: center;
+	gap: 10px;
+	& .social-list__item {
+		border-radius: 50%;
+		background-color: rgba(255, 255, 255, 0.10);
+	}
+
+	// &__title {
+	// 	margin: 11px 0 20px 0;
+	// }
+	&__list {
+		display: flex;
+	}
+
+	&__link {
+		display: block;
+		font-weight: 400;
+		color: inherit;
+		line-height: calc(24 / 14 * 100%);
+	}
+
+	& .social-list__icon {
+		fill: #ffffff;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.social__list {
+		justify-content: start;
+	}
+}

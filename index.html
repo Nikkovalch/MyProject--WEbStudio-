@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio</title>
+    <title>goIT-home-work-088</title>
     <!-- Шрифти -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -80,15 +80,17 @@
               +1 (425) 123-45-63
             </a>
           </address>
+          <svg class="header__burger" width="40" height="40">
+            <use href="./image/svg/symbol-defs.svg#icon-menu"></use>
+          </svg>
         </div>
       </header>
       <!-- Унікальний контент -->
       <main class="page">
-        <!-- Роздал Герой -->
+        <!-- Розділ Герой -->
         <section class="hero">
           <div class="container hero__container">
             <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-            <!-- Кнопка виклику модального вікна -->
             <button type="button" class="hero__btn" data-modal-open>
               Замовити послугу
             </button>
@@ -97,9 +99,7 @@
         <!-- Розділ Особливості -->
         <section class="features">
           <div class="container features__container">
-            <!-- Заголовок(не буде видимий для користувача) -->
             <h2 class="page__title">Особливості</h2>
-            <!-- Список особливостей -->
             <ul class="features__list list-features">
               <li class="list-features__item">
                 <div class="list-features__block">
@@ -111,7 +111,7 @@
                 </div>
                 <h3 class="list-features__title">УВАГА ДО ДЕТАЛЕЙ</h3>
                 <p class="list-features__text">
-                  Ідейні міркування, і початок повсякденної роботи з
+                  Ідейні міркування, і навіть початок повсякденної роботи з
                   формування позиції.
                 </p>
               </li>
@@ -161,9 +161,7 @@
         <!-- Розділ "Ми робимо" -->
         <section class="box">
           <div class="container box__container">
-            <!-- Заголовок -->
             <h2 class="page-title">Чим ми займаємося</h2>
-            <!-- Список того що ми робимо -->
             <ul class="box__list">
               <li class="box__item">
                 <div class="box__image">
@@ -179,7 +177,7 @@
               <li class="box__item">
                 <div class="box__image">
                   <img
-                    src="./image/main/box/img-1.jpg"
+                    src="./image/main/box/img-2.jpg"
                     width="370"
                     height="294"
                     alt="Працює з телефону"
@@ -190,7 +188,7 @@
               <li class="box__item">
                 <div class="box__image">
                   <img
-                    src="./image/main/box/img-2.jpg"
+                    src="./image/main/box/img-3.jpg"
                     width="370"
                     height="294"
                     alt="Сідбір кольору на планшеті"
@@ -204,19 +202,16 @@
         <!-- Розділ "Ми Команда" -->
         <section class="team">
           <div class="container team__container">
-            <!-- Заголовок -->
             <h2 class="page-title">Наша команда</h2>
-            <!-- Список учасників команди -->
             <ul class="team__list">
               <li class="team__item">
                 <div class="team__column">
-                  <img
-                    class="team__image"
-                    src="./image/main/team/img-01.jpg"
-                    width="270"
-                    height="260"
-                    alt="Ігор Дем'яненко"
-                  />
+                  <div class="team__image">
+                    <img
+                      src="./image/main/team/img-01.jpg"
+                      alt="Ігор Дем'яненко"
+                    />
+                  </div>
                   <h3 class="team__title">Ігор Дем'яненко</h3>
                   <p class="team__profesion">Product Designer</p>
                   <ul class="team__list-social social-list">
@@ -277,13 +272,12 @@
               </li>
               <li class="team__item">
                 <div class="team__column">
-                  <img
-                    class="team__image"
-                    src="./image/main/team/img-02.jpg"
-                    width="270"
-                    height="260"
-                    alt="Ольга Рєпіна"
-                  />
+                  <div class="team__image">
+                    <img
+                      src="./image/main/team/img-02.jpg"
+                      alt="Ольга Рєпіна"
+                    />
+                  </div>
                   <h3 class="team__title">Ольга Рєпіна</h3>
                   <p class="team__profesion">Frontend Developer</p>
                   <ul class="team__list-social social-list">
@@ -344,13 +338,13 @@
               </li>
               <li class="team__item">
                 <div class="team__column">
-                  <img
-                    class="team__image"
-                    src="./image/main/team/img-03.jpg"
-                    width="270"
-                    height="260"
-                    alt="Микола Тарасов"
-                  />
+                  <div class="team__image">
+                    <img
+                      class="team__image"
+                      src="./image/main/team/img-03.jpg"
+                      alt="Микола Тарасов"
+                    />
+                  </div>
                   <h3 class="team__title">Микола Тарасов</h3>
                   <p class="team__profesion">Marketing</p>
                   <ul class="team__list-social social-list">
@@ -411,13 +405,13 @@
               </li>
               <li class="team__item">
                 <div class="team__column">
-                  <img
-                    class="team__image"
-                    src="./image/main/team/img-04.jpg"
-                    width="270"
-                    height="260"
-                    alt="Михайло Єрмаков"
-                  />
+                  <div class="team__image">
+                    <img
+                      class="team__image"
+                      src="./image/main/team/img-04.jpg"
+                      alt="Михайло Єрмаков"
+                    />
+                  </div>
                   <h3 class="team__title">Михайло Єрмаков</h3>
                   <p class="team__profesion">UI Designer</p>
                   <ul class="team__list-social social-list">
@@ -482,11 +476,8 @@
         <!-- Розділ "Постійні клієнтти" -->
         <section class="clients">
           <div class="container clients__container">
-            <!-- Заголовок -->
             <h2 class="page-title">Постійні клієнти</h2>
-            <!-- Список кліентів -->
             <ul class="clients__columns">
-              <!-- Картка кліента -->
               <li class="clients__column">
                 <a href="" class="clients__link" rel="noreferrer noopener">
                   <svg class="clients__icon" width="41" height="46.7">
@@ -496,7 +487,6 @@
                   </svg>
                 </a>
               </li>
-              <!-- Картка кліента -->
               <li class="clients__column">
                 <a href="" class="clients__link" rel="noreferrer noopener">
                   <svg class="clients__icon" width="40" height="52">
@@ -506,7 +496,6 @@
                   </svg>
                 </a>
               </li>
-              <!-- Картка кліента -->
               <li class="clients__column">
                 <a href="" class="clients__link" rel="noreferrer noopener">
                   <svg class="clients__icon" width="43.46" height="41.18">
@@ -516,7 +505,6 @@
                   </svg>
                 </a>
               </li>
-              <!-- Картка кліента -->
               <li class="clients__column">
                 <a href="" class="clients__link" rel="noreferrer noopener">
                   <svg class="clients__icon" width="84.44" height="40.62">
@@ -526,7 +514,6 @@
                   </svg>
                 </a>
               </li>
-              <!-- Картка кліента -->
               <li class="clients__column">
                 <a href="" class="clients__link" rel="noreferrer noopener">
                   <svg class="clients__icon" width="62.54" height="45.43">
@@ -536,7 +523,6 @@
                   </svg>
                 </a>
               </li>
-              <!-- Картка кліента -->
               <li class="clients__column">
                 <a href="" class="clients__link" rel="noreferrer noopener">
                   <svg class="clients__icon" width="93.79" height="43.93">
@@ -554,7 +540,11 @@
       <footer class="footer">
         <div class="container footer__container">
           <div class="footer__address address">
-            <a href="" class="logo" title="Логотип" rel="noreferrer noopener"
+            <a
+              href=""
+              class="footer__logo logo"
+              title="Логотип"
+              rel="noreferrer noopener"
               ><span class="accent">Web</span>Studio</a
             >
             <address class="address__block">
@@ -611,16 +601,25 @@
           <!-- Посилання -->
           <div class="footer__input input-footer">
             <!-- Заголовок посилання -->
-            <h3 class="input-footer__title title-footer">Підпишіться на розсилку</h3>
+            <h3 class="input-footer__title title-footer">
+              Підпишіться на розсилку
+            </h3>
             <form class="input-footer__form">
-              <input class="input-footer__email" type="email" placeholder=" " id="user-email">
+              <input
+                class="input-footer__email"
+                type="email"
+                placeholder=" "
+                id="user-email"
+              />
               <label class="input-footer__label" for="user-email">E-mail</label>
               <!-- кнопка -->
               <button class="footer__btn">
                 Підписатися
                 <!-- іконка до кнопки -->
                 <svg class="footer__btn-icon">
-                  <use href="./image/svg/symbol-defs.svg#icon-icon-send-2"></use>
+                  <use
+                    href="./image/svg/symbol-defs.svg#icon-icon-send-2"
+                  ></use>
                 </svg>
               </button>
             </form>
@@ -629,9 +628,8 @@
       </footer>
     </div>
     <!-- Модальне вікно -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <!-- Кнопка закриття модального вікна -->
         <button type="button" class="modal_close" data-modal-close>
           <svg class="close-svg">
             <use
@@ -639,7 +637,6 @@
             ></use>
           </svg>
         </button>
-        <!-- Форма -->
         <form class="form">
           <div
             role="group"
@@ -712,7 +709,7 @@
           <button class="form-button" type="submit">Відправити</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <!-- Підключення scripta -->
     <script src="./js/modal.js"></script>
   </body>

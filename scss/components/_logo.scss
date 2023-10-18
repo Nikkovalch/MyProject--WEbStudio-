@@ -2,10 +2,10 @@
   display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26 * 100%);
+  font-size: 24px;
   text-decoration: none;
   color: $logo-dark;
+  letter-spacing: 0.72px;
 }
 .accent {
   color: $color-logo;

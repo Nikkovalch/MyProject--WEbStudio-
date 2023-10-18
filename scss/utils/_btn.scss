@@ -1,0 +1,15 @@
+@import "./btn-placeholder";
+@import "./btn-mixin";
+.hero__btn {
+  @extend %btn;
+  @include btn(0 32px, $header-color-light);
+}
+.form-button {
+  @extend %btn;
+  @include btn( 0 52px, $header-color-light);
+}
+.footer__btn {
+  @extend %btn;
+  @include btn(0 28px, $header-color-light);
+  margin: 0 auto;
+}

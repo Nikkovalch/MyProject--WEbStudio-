@@ -1,41 +1,60 @@
 .footer__input {
-	margin-left: 93px;
-	flex: 1 1 auto;
+	@media screen and (min-width: 768px) {
+		min-width: 450px;
+	}
+	@media screen and (min-width: 1200px) {
+		text-align: start;
+		flex: 1 1 auto;
+	}
 }
 
+// форма==========================
 .input-footer__form {
-	display: flex;
 	position: relative;
-	gap: 12px;
+	@media screen and (min-width: 1200px) {
+		display: flex;
+	}
 }
+
+// email===========================================
 .input-footer__email {
-	position: relative;
-	padding: 10px 16px;
-	flex: 1 1 auto;
-	border: none;
-	outline: none;
+	padding: 15px 16px;
+	width: 100%;
+	border: 1px solid rgba(255, 255, 255, 0.30);
+	// outline: none;
 	background-color: #2F303A;
-	outline: 1px solid rgba(255, 255, 255, 0.30);;
+	// outline: 1px solid rgba(255, 255, 255, 0.30);
 	border-radius: 4px;
 	color: white;
+	margin-bottom: 20px;
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 0px;
+		margin-right: 12px;
+		flex: 1 1 auto;
+	}
 }
-.input-footer__label {
-	position: absolute;
-	top: 50%;
-	left: 16px;
-	color: rgba(255, 255, 255, 0.60);
-	line-height: calc(20 / 16 * 100%);
-	letter-spacing: 0.48px;
-	transform: translateY(-50%);
-	transition: top $transition-timing-function 1s;
-	opacity: 0;
-}
-.input-footer__email:placeholder-shown + .input-footer__label {
-	opacity: 1;
-}
-// іконка кнопки----------------------------------
-.footer__btn-icon {
-	width: 24px;
-	height: 24px;
-	margin-left: 10px;
-}
+	// label=============================
+	.input-footer__label {
+		position: absolute;
+		top: 15px;
+		left: 16px;
+		color: rgba(255, 255, 255, 0.60);
+		line-height: calc(20 / 16 * 100%);
+		letter-spacing: 0.48px;
+		transition: top $transition-timing-function 1s;
+		opacity: 0;
+	}
+
+	.input-footer__email:placeholder-shown+.input-footer__label {
+		opacity: 1;
+	}
+
+	// іконка кнопки----------------------------------
+	.footer__btn-icon {
+		width: 24px;
+		height: 24px;
+		margin-left: 10px;
+		@media screen and (min-width: 1200px) {
+			margin: 0;
+		}
+	}

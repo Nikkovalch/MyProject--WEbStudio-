@@ -2,7 +2,11 @@
   background-color: #FFF;
   &__container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+  }
+  &__logo {
+    padding: 16px 0;
   }
 }
 
@@ -11,6 +15,4 @@
 .header__menu {
   margin-left: 93px;
 }
-
-/* -------svg------------------- */
 
