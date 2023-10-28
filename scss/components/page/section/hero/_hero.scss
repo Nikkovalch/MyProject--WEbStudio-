@@ -10,11 +10,41 @@
 .hero {
   background-color: #2f303a;
   display: block;
-  background-image: url(../image/hero/Img\ Overlay.png),
-    url(../image/hero/hero-480px.jpg);
+  background-image: url(../image/hero/Img\ Overlay.png), url(../image/hero/Header.jpg);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
+// Mobile
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../image/hero/Img\ Overlay.png),  url(../image/hero/Header@2x.jpg);
+  }
+// Tablet
+  @media screen and (min-width: 481px){
+    background-image: url(../image/hero/Img\ Overlay.png),  url(../image/hero/Header768.jpg);
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image:url(../image/hero/Img\ Overlay.png),  url(../image/hero/Header768@2x.jpg);
+    }
+  }
+// Робочий стіл
+@media screen and (min-width: 1200px){
+  background-image:url(../image/hero/Img\ Overlay.png),  url(../image/hero/Hero1200.jpg);
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image:url(../image/hero/Img\ Overlay.png),  url(../image/hero/Hero1200@2x.jpg);
+  }
+}
+
   &__title {
     text-align: center;
     font-weight: 900;
@@ -31,14 +61,14 @@
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .hero {
-    background-image: url(../image/hero/Img\ Overlay.png), url(../image/hero/hero-768px.jpg);
-  }
-}
-@media screen and (min-width: 769px) {
-  .hero {
-    background-image: url(../image/hero/Img\ Overlay.png), url(../image/hero/hero-1200px.jpg);
-  }
-}
+// @media screen and (min-width: 481px) and (max-width: 768px) {
+//   .hero {
+//     background-image: url(../image/hero/Img\ Overlay.png), url(../image/hero/hero-768px.jpg);
+//   }
+// }
+// @media screen and (min-width: 769px) {
+//   .hero {
+//     background-image: url(../image/hero/Img\ Overlay.png), url(../image/hero/hero-1200px.jpg);
+//   }
+// }
 

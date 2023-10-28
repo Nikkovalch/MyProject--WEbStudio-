@@ -14,7 +14,7 @@
 @import "./components/page/page";
 @import "./components/page-title";
 @import "./components/page/section/hero/hero";
-// @import "./components/page/section/hero/modal";
+@import "./components/page/section/hero/modal";
 @import "./components/page/section/features/features";
 @import "./components/page/section/box/box";
 @import "./components/page/section/team/team";
@@ -29,10 +29,10 @@
 @import "./components/portfolio/portfolio";
 @import "./components/portfolio/column-category";
 // Форма-------------------------
-// @import "./components/form";
+@import "./components/form";
 
 
 // Кнопки============================
-// @import "./utils/btn-mixin";
-// @import "./utils/btn-placeholder";
+@import "./utils/btn-mixin";
+@import "./utils/btn-placeholder";
 @import "./utils/btn";

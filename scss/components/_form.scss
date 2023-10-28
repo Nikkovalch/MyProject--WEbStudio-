@@ -6,8 +6,6 @@
 .modal-label {
   display: flex;
   flex-direction: column;
-  color: #757575;
-  font-size: 12px;
   letter-spacing: 0.12px;
   margin-bottom: 10px;
   position: relative;
@@ -52,6 +50,8 @@
 .checkbox-label {
   display: flex;
   align-items: center;
+  color: #757575;
+  font-size: 12px;
 }
 .modal-checkbox {
   display: flex;
@@ -92,7 +92,6 @@
 }
 .checkbox-link {
   color: $brend-color;
-  font-weight: 400;
   letter-spacing: 0.42px;
   text-decoration-line: underline;
   transition: text-shadow ease 0.2s;
