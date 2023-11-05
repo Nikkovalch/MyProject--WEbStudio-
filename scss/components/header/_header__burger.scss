@@ -1,7 +1,18 @@
+
 .header__burger {
-  @media screen and (min-width: 768px) {
-    & {
-      display: none;
-    }
+  display: none;
+  z-index: 2;
+  @media screen and (max-width: 767px){
+    display: block;
   }
+  &.active .header__burger-close { 
+    display: block;
+  }
+}
+
+.header__burger.active .header__burger-open { 
+  display: none;
+}
+.header__burger-close { 
+  display: none;
 }

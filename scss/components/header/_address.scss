@@ -1,54 +1,76 @@
 .header__address {
-  display: none;
-  padding: 0 0 0 20px;
-  column-gap: 50px;
-  row-gap: 25px;
-  margin-left: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 32px;
 }
+
 .header__link {
   font-weight: 500;
+  font-size: 34px;
   line-height: calc(16 / 14 * 100%);
-  letter-spacing: 0.02em;
-  display: block;
   align-items: center;
   color: #757575;
-  display: flex;
   transition: color $transition-duration $transition-timing-function;
-  &:hover,
-  &:focus {
-    color: #2196f3;
-  }
-  &:hover .header__icon,
-  &:focus .header__icon {
-    fill: #2196f3;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    &:not(:last-child) {
-      margin-bottom: 10px;
+  @media screen and (max-width: 767px) {
+    &:nth-child(1) {
+      font-size: 24px;
     }
   }
 }
-.header__icon {
-  margin-right: 10px;
-  fill: #757575;
-  transition: fill $transition-duration $transition-timing-function;
-  &--envelope {
-    width: 16px;
-    height: 12px;
-  }
-  &--smartphone {
-    width: 10px;
-    height: 16px;
-  }
-}
-.header__address {
-  @media screen and (min-width: 768px) {
+
+
+@media screen and (min-width: 768px) {
+  .header__address {
     display: block;
   }
-  @media screen and (min-width: 1200px) {
+
+  .header__link {
+    font-size: 12px;
     display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &:hover,
+    &:focus {
+      color: #2196f3;
+    }
+
+    &:hover .header__icon,
+    &:focus .header__icon {
+      fill: #2196f3;
+    }
   }
 }
+
+
+.header__icon {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-right: 10px;
+    fill: #757575;
+    transition: fill $transition-duration $transition-timing-function;
+
+    &--envelope {
+      width: 16px;
+      height: 12px;
+    }
+
+    &--smartphone {
+      width: 10px;
+      height: 16px;
+    }
+  }
+}
+
+// .header__address {
+//   @media screen and (min-width: 768px) {
+
+//   }
+//   @media screen and (min-width: 1200px) {
+
+//   }
+// }

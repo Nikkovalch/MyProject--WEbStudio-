@@ -1,4 +1,9 @@
 /* ----------Ширина-контенту---------------------- */
+@media (max-width: 767px) {
+  body.lock {
+    overflow: hidden;
+  }
+}
 .container {
   margin: 0 auto;
   padding: 0 15px;

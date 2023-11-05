@@ -26,60 +26,41 @@
       <!-- Шапка сайту -->
       <header class="header">
         <div class="container header__container">
-          <a
-            href=""
-            class="logo header__logo"
-            title="Логотип"
-            rel="noreferrer noopener"
-            ><span class="accent">Web</span>Studio</a
-          >
-          <nav class="menu header__menu">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a
-                  class="menu__link"
-                  href="./index.html"
-                  rel="noreferrer noopener"
-                  >Студія</a
-                >
-              </li>
-              <li class="menu__item">
-                <a
-                  class="menu__link menu__link--active"
-                  href=""
-                  rel="noreferrer noopener"
-                  >Портфоліо</a
-                >
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="" rel="noreferrer noopener"
-                  >Контакти</a
-                >
-              </li>
-            </ul>
-          </nav>
-          <address class="header__address">
-            <a
-              class="header__link"
-              href="mailto:info@devstudio.com"
-              rel="noreferrer noopener"
-            >
-              <svg class="header__icon header__icon--envelope">
-                <use href="./image/svg/symbol-defs.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-            <a
-              class="header__link"
-              href="tel:+14251234563"
-              rel="noreferrer noopener"
-            >
-              <svg class="header__icon header__icon--smartphone">
-                <use href="./image/svg/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +1 (425) 123-45-63
-            </a>
-          </address>
+          <a href="" class="logo header__logo" title="Логотип" rel="noreferrer noopener"><span
+              class="accent">Web</span>Studio</a>
+          <svg class="header__burger" width="40" height="40">
+            <use class="header__burger-open" href="./image/svg/symbol-defs.svg#icon-open"></use>
+            <use class="header__burger-close" href="./image/svg/symbol-defs.svg#icon-close"></use>
+          </svg>
+          <div class="header__burger-container">
+            <nav class="menu header__menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link" href="./index.html" rel="noreferrer noopener">Студія</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link  menu__link--active" href="" rel="noreferrer noopener">Портфоліо</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="" rel="noreferrer noopener">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <address class="header__address">
+              <a class="header__link" href="mailto:info@devstudio.com" rel="noreferrer noopener">
+                <svg class="header__icon header__icon--envelope">
+                  <use href="./image/svg/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+              <a class="header__link" href="tel:+14251234563" rel="noreferrer noopener">
+                <svg class="header__icon header__icon--smartphone">
+                  <use href="./image/svg/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +1 (425) 123-45-63
+              </a>
+            </address>
+          </div>
         </div>
       </header>
       <!-- Унікальна частина -->
@@ -445,5 +426,10 @@
         </div>
       </footer>
     </div>
+      <!-- Пождключаємо jquery --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <!-- Підключення scripta -->
+  <script src="js/script.js"></script>
+  <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -1,18 +1,42 @@
 .header {
-  background-color: #FFF;
   &__container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    height: 60px;
+    justify-content: space-between;
   }
   &__logo {
-    padding: 16px 0;
   }
+  &__burger-container {
+    z-index: 10;
+    display: none;
+    transition: top $transition-duration
+    $transition-timing-function;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: fixed;
+      overflow-y: scroll;
+      width: 100%;
+      height: 100%;
+      top: -100%;
+      left: 0;
+      background-color: white;
+      padding: 48px 40px;
+    }
+    &.active {
+      top: 0;
+    }
+  }
+
 }
 
-// ----menu-----------------------
 
-.header__menu {
-  margin-left: 93px;
-}
 
