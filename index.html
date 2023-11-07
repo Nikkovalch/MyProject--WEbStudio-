@@ -133,25 +133,39 @@
           <ul class="box__list">
             <li class="box__item">
               <div class="box__image">
-                <img
-                  srcset="./image/main/box/img-01.jpg 1x, ./image/main/box/img-01@2x.jpg 2x, ./image/main/box/img-01@3x.jpg 3x"
-                  src="./image/main/box/img-01.jpg" width="370" height="294" alt="Набирає тест на пк" />
+                <picture>
+                  <source
+                    srcset="./image/main/box/img-01.webp 1x, ./image/main/box/img-01@2x.webp 2x, ./image/main/box/img-01@3x.webp 3x"
+                    type="image/webp">
+                  <source
+                    srcset="./image/main/box/img-01.jpg 1x, ./image/main/box/img-01@2x.jpg 2x, ./image/main/box/img-01@3x.jpg 3x"
+                    type="image/jpg">
+                  <img src="./image/main/box/img-01.jpg" width="370" height="294" alt="Набирає тест на пк" />
+                </picture>
                 <p class="box__text">Десктопні додатки</p>
               </div>
             </li>
             <li class="box__item">
               <div class="box__image">
-                <img
-                  srcset="./image/main/box/img-02.jpg 1x, ./image/main/box/img-02@2x.jpg 2x, ./image/main/box/img-02@3x.jpg 3x"
-                  src="./image/main/box/img-02.jpg" width="370" height="294" alt="Працює з телефону" />
+                <picture>
+                  <source
+                    srcset="./image/main/box/img-02.webp 1x, ./image/main/box/img-02@2x.webp 2x, ./image/main/box/img-02@3x.webp 3x"
+                    type="image/webp" />
+                  <source
+                    srcset="./image/main/box/img-02.jpg 1x, ./image/main/box/img-02@2x.jpg 2x, ./image/main/box/img-02@3x.jpg 3x"
+                    type="image/jpg" />
+                  <img src="./image/main/box/img-02.jpg" width="370" height="294" alt="Працює з телефону" />
+                </picture>
                 <p class="box__text">Мобільні додатки</p>
               </div>
             </li>
             <li class="box__item">
               <div class="box__image">
-                <img
-                  srcset="./image/main/box/img-03.jpg 1x, ./image/main/box/img-03@2x.jpg 2x, ./image/main/box/img-03@3x.jpg 3x"
-                  src="./image/main/box/img-03.jpg" width="370" height="294" alt="Підбір кольору на планшеті" />
+                <picture>
+                  <source srcset="./image/main/box/img-03.webp 1x, ./image/main/box/img-03@2x.webp 2x, ./image/main/box/img-03@3x.webp 3x" type="image/webp" />
+                  <source srcset="./image/main/box/img-03.jpg 1x, ./image/main/box/img-03@2x.jpg 2x, ./image/main/box/img-03@3x.jpg 3x" type="image/jpg" />
+                  <img src="./image/main/box/img-03.jpg" width="370" height="294" alt="Працює з телефону" />
+                </picture>
                 <p class="box__text">Дизайнерські рішення</p>
               </div>
             </li>
@@ -165,12 +179,11 @@
           <ul class="team__list">
             <li class="team__item">
               <div class="team__image">
-                <img srcset="
-                      ./image/main/team/img01-450.jpg    480w,
-                      ./image/main/team/img01-900.jpg   768w,
-                      ./image/main/team/img01-1350.jpg 1200w
-                    " src="./image/main/team/img01-450.jpg" alt="Ігор Дем'яненко"
-                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                <picture>
+                  <source srcset="./image/main/team/img01-450.webp 480w, ./image/main/team/img01-900.webp 768w, ./image/main/team/img01-1350.webp 1200w" type="image/webp" />
+                  <source srcset="./image/main/team/img01-450.jpg 480w, ./image/main/team/img01-900.jpg 768w, ./image/main/team/img01-1350.jpg 1200w" type="image/jpg" />
+                  <img src="./image/main/team/img01-450.jpg" alt="Ігор Дем'яненко" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                </picture>
               </div>
               <div class="team__info info-team">
                 <h3 class="info-team__title">Ігор Дем'яненко</h3>
@@ -209,12 +222,11 @@
             </li>
             <li class="team__item">
               <div class="team__image">
-                <img srcset="
-                      ./image/main/team/img02-450.jpg   480w,
-                      ./image/main/team/img02-900.jpg   768w,
-                      ./image/main/team/img02-1350.jpg 1200w
-                    " src="./image/main/team/img02-450.jpg" alt="Ольга Рєпіна"
-                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                <picture>
+                  <source srcset="./image/main/team/img02-450.webp 480w, ./image/main/team/img02-900.webp 768w, ./image/main/team/img02-1350.webp 1200w" type="image/webp" />
+                  <source srcset="./image/main/team/img02-450.jpg 480w, ./image/main/team/img02-900.jpg 768w, ./image/main/team/img02-1350.jpg 1200w" type="image/jpg" />
+                  <img src="./image/main/team/img02-450.jpg" alt="Ігор Дем'яненко" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                </picture>
               </div>
               <div class="team__info info-team">
                 <h3 class="info-team__title">Ольга Рєпіна</h3>
@@ -253,12 +265,11 @@
             </li>
             <li class="team__item">
               <div class="team__image">
-                <img srcset="
-                      ./image/main/team/img03-450.jpg   480w,
-                      ./image/main/team/img03-900.jpg   768w,
-                      ./image/main/team/img03-1350.jpg 1200w
-                    " src="./image/main/team/img03-450.jpg" alt="Микола Тарасов"
-                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                <picture>
+                  <source srcset="./image/main/team/img03-450.webp 480w, ./image/main/team/img03-900.webp 768w, ./image/main/team/img03-1350.webp 1200w" type="image/webp" />
+                  <source srcset="./image/main/team/img03-450.jpg 480w, ./image/main/team/img03-900.jpg 768w, ./image/main/team/img03-1350.jpg 1200w" type="image/jpg" />
+                  <img src="./image/main/team/img03-450.jpg" alt="Ігор Дем'яненко" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                </picture>
               </div>
               <div class="team__info info-team">
                 <h3 class="info-team__title">Микола Тарасов</h3>
@@ -297,12 +308,11 @@
             </li>
             <li class="team__item">
               <div class="team__image">
-                <img srcset="
-                      ./image/main/team/img04-450.jpg  480w,
-                      ./image/main/team/img04-900.jpg  768w,
-                      ./image/main/team/img04-1350.jpg 1200w
-                    " src="./image/main/team/img04-450.jpg" alt="Михайло Єрмаков"
-                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                <picture>
+                  <source srcset="./image/main/team/img04-450.webp 480w, ./image/main/team/img04-900.webp 768w, ./image/main/team/img04-1350.webp 1200w" type="image/webp" />
+                  <source srcset="./image/main/team/img04-450.jpg 480w, ./image/main/team/img04-900.jpg 768w, ./image/main/team/img04-1350.jpg 1200w" type="image/jpg" />
+                  <img src="./image/main/team/img04-450.jpg" alt="Ігор Дем'яненко" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                </picture>
               </div>
               <div class="team__info info-team">
                 <h3 class="info-team__title">Михайло Єрмаков</h3>
@@ -514,7 +524,7 @@
       </form>
     </div>
   </div>
-  <!-- Пождключаємо jquery --> 
+  <!-- Пождключаємо jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <!-- Підключення scripta -->
   <script src="js/script.js"></script>
