@@ -21,11 +21,12 @@
   opacity: 0;
   pointer-events: none;
 }
-.is-hidden .modal {
-  transform: translate(0%, 0%) scale(0.5);
-}
+// .is-hidden .modal {
+//   transform: translate(0%, 0%) scale(0.5);
+// }
 .modal {
   position: relative;
+  z-index: 2;
   padding: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -70,3 +71,4 @@
   letter-spacing: 0.6px;
   margin-bottom: 12px;
 }
+

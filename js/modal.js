@@ -31,7 +31,7 @@
     // Перевірте, чи зараз модальне вікно не приховане і чи існує елемент nameInput
     if (!refs.modal.classList.contains('is-hidden') && refs.nameInput) {
       refs.nameInput.focus();
-    }
+    };
   }
 })();
 
